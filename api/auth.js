@@ -40,10 +40,12 @@ const verifyToken = (req,res,next) => {
           // Refresh token geçerliyse yeni bir access token oluştur
             const newAccessToken = generateAccessToken({userId:user.id});
             req.session.accessToken = newAccessToken;
+            req.user = user2;
             next();
           });
       }else{
         // Access token doğrulandı
+        req.user = user;
         next();
       }
     })
