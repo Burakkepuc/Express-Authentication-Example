@@ -56,16 +56,7 @@ Bu örnek, Node.js ve JSON Web Token (JWT) ve Express-session kullanarak basit b
   GET api/private/users
 ```
 
-| Parametre | Tip     |                      |
-| :-------- | :-------  :-------------------------------- |
-| `status`      | `message` | |
 
 #### Kullanıcıları getir(public route)
 ```http
   GET api/public/users
-```
-
-| Parametre | Tip     |                      |
-| :-------- | :-------  :-------------------------------- |
-| `status`      | `message` | |
-
